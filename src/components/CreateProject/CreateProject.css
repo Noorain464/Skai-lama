@@ -1,0 +1,31 @@
+.create-project-page {
+    text-align: center;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.create-project-button {
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    padding-top: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    font-size: large;
+}
+.create-project-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.header-icons span{
+    margin: 10px;
+    font-size: xx-large;
+}

@@ -5,11 +5,7 @@
 .left-section {
   background: linear-gradient(135deg,#7e22ce, #b136f6);
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 40px;
+  padding-top:3rem;
   width: 65%;
 }
 #welcome{
@@ -19,19 +15,29 @@ h1{
   color:#7e22ce;
   margin: 0%;
 }
-  
+.branding{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
 .branding .logo {
   margin-bottom: 20px;
 }
 
 .branding h1 {
-  font-size: 36px;
+  color: white;
+  font-size: 48px;
   margin: 10px 0;
+  font-weight: 500;
   line-height: 1.2;
 }
 
-.branding p {
+.branding h2 {
   font-size: 18px;
+  color: white;
+  
 }
 
 .right-section {

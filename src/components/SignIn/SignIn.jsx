@@ -1,7 +1,14 @@
 import React from 'react';
 import './SignIn.css'; 
-
+import { useNavigate } from 'react-router-dom';
 const SignIn = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    
+    navigate('/create-project'); 
+  };
   return (
     <div className="signin-page">
       <div className="left-section">
@@ -10,7 +17,7 @@ const SignIn = () => {
           <h1>Your podcast </h1>
           <h1>will no longer </h1>
           <h1>be just a hobby.</h1>
-          <p>Supercharge Your Distribution using our AI assistant!</p>
+          <h2>Supercharge Your Distribution using our AI assistant!</h2>
         </div>
       </div>
       <div className="right-section">
@@ -18,7 +25,7 @@ const SignIn = () => {
           <img src="/path/to/icon.png" alt="Ques.AI Icon" className="icon" />
             <h1 id="welcome">Welcome to</h1>
             <h1 id="quesai">Ques.AI</h1>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="input-group">
               <label htmlFor="email">Email Address</label>
               <input type="email" id="email" placeholder="Email Address" />
@@ -37,7 +44,7 @@ const SignIn = () => {
             <button type="submit" className="signin-button">Login</button>
             <div className="divider">or</div>
             <button type="button" className="google-button">
-              <img src="/path/to/google-logo.png" alt="Google Logo" />
+              <img src='/home/syeda/skai-lama/skai-lama/src/assets/download.png'/>
               Continue with Google
             </button>
             <p className="footer-text">

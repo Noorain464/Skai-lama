@@ -1,0 +1,62 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    text-align: left;
+    font-weight: 500;
+}
+  
+.content {
+    background: #fff;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    width: 600px;
+    height: 180px;
+    max-width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+  
+.input-group {
+    margin-bottom: 16px;
+}
+  
+.error-text {
+    color: red;
+    font-size: 12px;
+}
+  
+.footer {
+    display: flex;
+    justify-content:flex-end
+}
+  
+.cancel-button {
+    background: none;
+    border: none;
+    margin: 5px;
+    color: red;
+    cursor: pointer;
+}
+  
+.create-button {
+    background: #7e22ce;
+    border: none;
+    color: #fff;
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  

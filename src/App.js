@@ -1,10 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignIn from './components/SignIn/SignIn';
-function App() {
+import CreateProject from './components/CreateProject/CreateProject';
+
+const App = () => {
   return (
-    <SignIn/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        <Route path="/create-project" element={<CreateProject />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
